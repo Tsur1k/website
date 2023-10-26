@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        th {
+            text-align: left
+        }
+
+        td {
+            text-align: right
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ЗАО Птицефабрика №1</h1>
+    <table style="margin: auto">
+        <tr>
+            <td>Фамилия</td>
+            <th><input type="text" name="sn" /></th>
+        </tr>
+        <tr>
+            <td>Инициалы</td>
+            <th><input type="text" name="n" /></th>
+        </tr>
+        <tr>
+            <td>Пароль</td>
+            <th><input type="password" name="pass" /></th>
+        </tr>
+        <tr>
+            <td>Адрес получателя</td>
+            <th><input type="text" name="a" style="width: 500px" /></th>
+        </tr>
+        <tr>
+            <td>Количество</td>
+            <th><input type="text" name="q" /></th>
+        </tr>
+        <tr>
+            <td>Тип</td>
+            <th><select name="t1">
+                    <option value="1">Куриные</option>
+                    <option value="2">Что-то ещё</option>
+                </select>
+                <select name="t2">
+                    <option value="1">Отборные</option>
+                    <option value="2">Первая категория</option>
+                    <option value="3">Вторая категория</option>
+                    <option value="4">Третья категория</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <td>Доставка</td>
+            <th><input type="radio" value="post" checked name="del" />Почтой
+                <input type="radio" value="elec" name="del" />Электронно
+                <input type="radio" value="cour" name="del" />Курьером
+            </th>
+        </tr>
+        <tr>
+            <td>Требуется накладная</td>
+            <th><input type="checkbox" name="pap"></th>
+        </tr>
+        <tr>
+            <td>Дополнительная информация</td>
+            <th><textarea name="addinf" style="resize: none" cols="50" rows="5"></textarea></th>
+        </tr>
+        <tr>
+            <td><button type="submit">Заказать</button></td>
+            <th><button type="reset">Отменить</button></th>
+        </tr>
+    </table>
+    <hr>
+    <h1>Пример формы регистрации сайта</h1>
+    <form>
+        <label for="log">Логин: </label><br>
+        <input type="text" name="log" /><br>
+        <label for="pass">Пароль: </label><br>
+        <input type="password" name="pass" /><br>
+        <label for="url">URL-адрес сайта: </label><br>
+        <input type="url" name="url" value="http://" /><br>
+        <label for="name">Название сайта: </label><br>
+        <input type="text" name="name" /><br>
+        <label for="desc">Описание сайта: </label><br>
+        <textarea name="desc" style="resize: none" cols="50" rows="5"></textarea><br>
+        <label for="theme">Тема сайта: </label><br>
+        <select name="theme">
+            <option value="1">Тема не выбрана</option>
+        </select><br>
+        <label for="log">Баннер 88х31: </label><br>
+        <input type="file" name="upl"><br><br>
+        <button type="reset">Очистить</button>
+        <button type="submit">Отправить</button>
+
+    </form>
+</body>
+
+</html>
